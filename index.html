@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erycson's Survey Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Thrifty Survey Form</h1>
+    <p id="description">
+        Terimakasih telah menyempatkan waktu anda untuk membantu kami meningkatkan kinerja platform kami!
+    </p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Nama : 
+            <input type="text" id="name" required placeholder="Masukkan nama anda">
+        </label>
+        <label for="email" id="email-label">Email : 
+            <input type="email" id="email" required placeholder="Masukkan email anda">
+        </label>
+        <label for="nomor" id="number-label">Umur : <input type="number" id="number" min="0" max="100" placeholder="Berapa umur anda?"></label>
+        <label for="role">Apa Profesi anda saat ini? 
+            <select name="job" id="dropdown">
+                <option value="pilihan">Pilih salah satu</option>
+                <option value="pelajar">Pelajar</option>
+                <option value="full-time">Pekerja Full-time</option>
+                <option value="part-time">Pekerja Part-time</option>
+                <option value="anonym">lain-lain</option>
+            </select>
+        </label>
+        <label for="radio">Apakah menurutmu Thrifty cocok untuk direkomendasikan ke orang lain?
+            <br>
+            <input type="radio" name="pilihan" value="1" class="inline">Sangat cocok
+            <br>
+            <input type="radio" name="pilihan" value="2" class="inline">Cocok
+            <br>
+            <input type="radio" name="pilihan" value="3" class="inline">Tidak cocok
+        </label>
+        <label for="feature">Manakah fitur thrifty yang menurut anda perlu peningkatan?
+            <br>
+            <input type="checkbox" id="shop" value="shop" class="inline">Thrift Shop
+            <br>
+            <input type="checkbox" id="tips" value="tips" class="inline">Thrift n tips
+            <br>
+            <input type="checkbox" id="delivery" value="delivery" class="inline">Thrift Delivery
+            <br>
+            <input type="checkbox" id="forum" value="forum" class="inline">Forum Thrifty
+        </label>
+        <label for="saran">Apakah ada saran lain untuk kami?
+            <textarea id="saran" cols="30" rows="10" placeholder="Ketik saran anda disini.."></textarea>
+        </label>
+        <input id="submit" type="submit" value="kirim">
+    </form>
+</body>
+</html>
